@@ -14,19 +14,16 @@ export default function IssuesList({ className, selectedRepoId }) {
   const repo = useSelector(({ repos }) =>
     repos.data.find(({ id }) => id == selectedRepoId)
   );
-  const { loading, data: issues } = useSelector(({ issues }) => issues);
-  const [fetchTime, setFetchTime] = useState(Date.now());
+  const { loading, issues } = useSelector(({ issues }) => ({
+    loading: issues.loading,
+    issues: issues.data,
+  }));
 
   useEffect(() => {
     dispatch(loadGithubIssues(selectedRepoId));
-  }, [selectedRepoId, fetchTime]);
+  }, [selectedRepoId]);
 
   const reorderIssues = (reorderedIssues) => {
-    // This is called on first render with an empty array
-    // Don't dispatch reorder action with an empty array.
-    if (reorderedIssues.length === 0) {
-      return;
-    }
     dispatch(reorderGithubIssues(selectedRepoId, reorderedIssues));
   };
 
@@ -38,7 +35,7 @@ export default function IssuesList({ className, selectedRepoId }) {
       </Link>
       <div className="flex direction-row space-between items-center">
         <h2>Issues</h2>
-        <button onClick={() => setFetchTime(Date.now())}>
+        <button onClick={() => dispatch(loadGithubIssues(selectedRepoId))}>
           Reload Issues
         </button>
       </div>

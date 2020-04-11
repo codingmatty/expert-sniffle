@@ -49,7 +49,7 @@ function issues(
     case 'LOADING_GITHUB_ISSUES':
       return {
         loading: true,
-        data: [],
+        data: state.data,
       };
     case 'SET_GITHUB_ISSUE_ERROR':
       return {
@@ -58,10 +58,6 @@ function issues(
         error: action.message
       };
     case 'SET_GITHUB_ISSUES':
-      return {
-        loading: false,
-        data: action.issues,
-      };
     case 'REORDER_GITHUB_ISSUES':
       return {
         loading: false,

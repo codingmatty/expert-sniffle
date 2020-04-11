@@ -8,12 +8,15 @@ import RepoDetails from './RepoDetails';
 
 export default function ReposList({ selectedRepoId }) {
   const dispatch = useDispatch();
-  const { loading, error, data: repos } = useSelector(({ repos }) => repos);
-  const [fetchTime, setFetchTime] = useState(Date.now());
+  const { loading, error, repos } = useSelector(({ repos }) => ({
+    loading: repos.loading,
+    error: repos.error,
+    repos: repos.data,
+  }));
 
   useEffect(() => {
     dispatch(loadGithubRepos());
-  }, [fetchTime]);
+  }, []);
 
   return (
     <div className="repos-list grow-1">
@@ -22,7 +25,9 @@ export default function ReposList({ selectedRepoId }) {
           <h2 className="mb-2">Repos</h2>
           <Link to="/">Update Token</Link>
         </div>
-        <button onClick={() => setFetchTime(Date.now())}>Reload Repos</button>
+        <button onClick={() => dispatch(loadGithubRepos())}>
+          Reload Repos
+        </button>
       </div>
 
       <ul>
