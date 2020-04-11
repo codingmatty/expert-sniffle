@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from '@reach/router';
 
 import { setGithubToken } from 'state/actions';
 
@@ -24,6 +25,11 @@ export default function TokenInputPage() {
         <button type="submit">Save</button>
       </form>
       <div>Token: {token}</div>
+      {token && (
+        <div>
+          <Link to="/repos">Load Repos</Link>
+        </div>
+      )}
     </div>
   );
 }

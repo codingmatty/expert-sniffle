@@ -6,15 +6,17 @@ import { Router } from "@reach/router"
 import './App.scss';
 
 import configureStore from 'state/store'
-import TokenInputPage from 'components/TokenInputPage';
-// import ReposPage from 'components/ReposPage';
+import TokenInputPage from 'pages/TokenInputPage';
+import ReposPage from 'pages/ReposPage';
+import IssuesPage from 'pages/IssuesPage';
 
 export function App() {
   return (
     <Provider store={configureStore()}>
       <Router>
         <TokenInputPage path="/" />
-        {/* <ReposPage path="repos" /> */}
+        <ReposPage path="repos" />
+        <IssuesPage path="repo/:repoId/issues" />
       </Router>
     </Provider>
   );
