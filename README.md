@@ -4,7 +4,7 @@
 
 This project allows you to use a Github Personal Access Token to load a list of Repos and then prioritize the issues for that repo as necessary.
 
-![](./demo.gif | width=500)
+![](./demo.gif)
 
 ## Getting Started
 
