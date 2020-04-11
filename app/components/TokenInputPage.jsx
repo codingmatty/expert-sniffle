@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { setGithubToken } from 'state/actions';
+
 export default function TokenInputPage() {
   const token = useSelector(({ token }) => token);
   const dispatch = useDispatch();
@@ -8,7 +10,7 @@ export default function TokenInputPage() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_GITHUB_TOKEN', token: tokenInput });
+    dispatch(setGithubToken(tokenInput));
   };
 
   return (
@@ -17,6 +19,7 @@ export default function TokenInputPage() {
         <input
           value={tokenInput}
           onChange={({ target: { value } }) => setTokenInput(value)}
+          data-testid="token-input"
         />
         <button type="submit">Save</button>
       </form>
