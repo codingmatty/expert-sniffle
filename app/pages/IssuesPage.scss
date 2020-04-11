@@ -1,0 +1,23 @@
+.issues-page {
+  .repos-list {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 738px;
+    .back-to-repos {
+      display: none;
+    }
+    .repos-list {
+      display: block;
+      max-width: 300px;
+    }
+    .issues-list {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (min-width: 1030px) {
+    max-width: 1000px;
+  }
+}

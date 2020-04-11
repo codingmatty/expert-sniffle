@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from '@reach/router'
 
 import { loadGithubRepos } from 'state/actions';
 
@@ -15,10 +16,13 @@ export default function ReposList({ selectedRepoId }) {
   }, [fetchTime]);
 
   return (
-    <div className="mx-auto w-half">
+    <div className="repos-list grow-1">
       <div className="flex direction-row space-between items-center">
         <h2>Repos</h2>
-        <button className="mr-4" onClick={() => setFetchTime(Date.now())}>
+        <Link to="/">
+          Update Token
+        </Link>
+        <button onClick={() => setFetchTime(Date.now())}>
           Reload Repos
         </button>
       </div>
@@ -29,11 +33,13 @@ export default function ReposList({ selectedRepoId }) {
         ) : repos.length === 0 ? (
           <p>{error || 'No Repos Found for provided token'}</p>
         ) : (
-          repos.map((repo) => (
-            <li key={repo.id}>
-              <RepoDetails {...repo} selected={repo.id === selectedRepoId} />
-            </li>
-          ))
+          repos
+            .sort(({ id }) => (id == selectedRepoId ? -1 : 0))
+            .map((repo) => (
+              <li key={repo.id}>
+                <RepoDetails repo={repo} selected={repo.id == selectedRepoId} />
+              </li>
+            ))
         )}
       </ul>
     </div>

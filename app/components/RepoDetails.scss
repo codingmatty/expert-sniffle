@@ -1,0 +1,37 @@
+.repo-details {
+  display: grid;
+  grid-template-areas:
+    'info star-count'
+    'info issue-count'
+    'description description';
+  grid-template-columns: 1fr 50px;
+
+  position: relative;
+  &.selected {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      background-color: teal;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+  }
+}
+
+.info {
+  grid-area: info;
+}
+.description {
+  grid-area: description;
+}
+.star-count {
+  grid-area: star-count;
+}
+.issue-count {
+  grid-area: issue-count;
+}
+
