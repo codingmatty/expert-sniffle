@@ -32,12 +32,26 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+// VENODR
 .material-icons {
   font-size: 1em;
 }
 
+.sortable-chosen {
+  cursor: grabbing;
+}
+
+// MISC
 .bg-white {
   background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.grabbable {
+  cursor: grab;
 }
 
 // BORDER
