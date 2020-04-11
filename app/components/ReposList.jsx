@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from '@reach/router'
+import { Link } from '@reach/router';
 
 import { loadGithubRepos } from 'state/actions';
 
@@ -17,14 +17,12 @@ export default function ReposList({ selectedRepoId }) {
 
   return (
     <div className="repos-list grow-1">
-      <div className="flex direction-row space-between items-center">
-        <h2>Repos</h2>
-        <Link to="/">
-          Update Token
-        </Link>
-        <button onClick={() => setFetchTime(Date.now())}>
-          Reload Repos
-        </button>
+      <div className="flex direction-row space-between items-center mb-2">
+        <div className="flex direction-column">
+          <h2 className="mb-2">Repos</h2>
+          <Link to="/">Update Token</Link>
+        </div>
+        <button onClick={() => setFetchTime(Date.now())}>Reload Repos</button>
       </div>
 
       <ul>

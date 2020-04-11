@@ -2,7 +2,7 @@ import React from 'react';
 
 import ReposList from 'components/ReposList';
 
-import './ReposPage.scss'
+import './ReposPage.scss';
 
 export default function ReposPage() {
   return (
@@ -11,10 +11,3 @@ export default function ReposPage() {
     </div>
   );
 }
-
-
-
-
-
-
-

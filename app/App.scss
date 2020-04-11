@@ -5,10 +5,18 @@ body {
 }
 
 button {
+  font-size: 1rem;
   background: none;
   padding: 0.5rem 1rem;
   border: 1px solid gray;
   border-radius: 6px;
+}
+
+input {
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
 }
 
 ul {
@@ -19,6 +27,10 @@ ul {
 
 p {
   margin: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .material-icons {
@@ -42,6 +54,13 @@ p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -52,7 +71,9 @@ p {
     margin-right: auto;
   }
 }
-
+.pointer {
+  cursor: pointer;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -63,6 +84,11 @@ p {
 .text-large {
   font-size: 1.2rem;
 }
+.text-xlarge {
+  font-size: 2rem;
+}
+
+
 
 .text-inherit {
   color: inherit;
@@ -71,7 +97,6 @@ p {
 .decoration-none {
   text-decoration: none;
 }
-
 
 .flex {
   display: flex;

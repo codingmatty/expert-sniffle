@@ -1,5 +1,5 @@
 export function setGithubToken(token) {
-  window.localStorage.setItem('token', action.token);
+  window.localStorage.setItem('token', token);
   return {
     type: 'SET_GITHUB_TOKEN',
     token,

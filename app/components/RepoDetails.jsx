@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '@reach/router';
+import { navigate } from '@reach/router';
 
 import Icon from 'components/Icon';
 
@@ -18,9 +18,9 @@ export default function RepoDetails({ repo, selected }) {
   } = repo;
 
   return (
-    <Link
-      to={`/repo/${id}/issues`}
-      className={`repo-details space-between mt-4 text-inherit decoration-none border border-gray radius-3 p-4 bg-white ${
+    <div
+      onClick={() => navigate(`/repo/${id}/issues`)}
+      className={`repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white ${
         selected ? 'selected' : ''
       }`}
     >
@@ -31,11 +31,7 @@ export default function RepoDetails({ repo, selected }) {
         </div>
 
         <div>
-          <a
-            href={html_url}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <a href={html_url} target="_blank">
             {full_name} <Icon name="open_in_new" />
           </a>
         </div>
@@ -49,6 +45,6 @@ export default function RepoDetails({ repo, selected }) {
         {open_issues_count}
       </div>
       <p className="mt-4 description">{description}</p>
-    </Link>
+    </div>
   );
 }
