@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TokenInputPage sets redux state 1`] = `
+<DocumentFragment>
+  <div
+    class="token-input-page mx-4 medium:mx-auto"
+  >
+    <div>
+      <p
+        class="my-4 text-xlarge"
+      >
+        Welcome!
+      </p>
+      <p
+        class="my-4"
+      >
+        Please provide a Github Personal Access Token to continue.
+      </p>
+      <p
+        class="my-4"
+      >
+        To obtain an Access Token, login to Github, visit the 
+        <a
+          href="https://github.com/settings/tokens"
+          target="_blank"
+        >
+          Github Tokens 
+          <i
+            class="material-icons "
+          >
+            open_in_new
+          </i>
+        </a>
+        , and generate a new one, providing a description like "Issue Prioritization Project" to describe its use.
+      </p>
+      <p
+        class="my-4"
+      >
+        Once you enter it here, you will then be able to select a Github repo to show a list of Issues and prioritize them as needed.
+      </p>
+    </div>
+    <form
+      class="token-form mx-auto flex direction-column"
+    >
+      <label
+        class="bold"
+        html="token-input"
+      >
+        Access Token:
+      </label>
+      <input
+        class="mt-4"
+        data-testid="token-input"
+        id="token-input"
+        value="abcdef123456"
+      />
+      <button
+        class="mt-4"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

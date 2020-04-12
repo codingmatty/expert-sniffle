@@ -37,10 +37,6 @@ ul {
   font-size: 1em;
 }
 
-.sortable-chosen {
-  cursor: grabbing;
-}
-
 // MISC
 .bg-white {
   background-color: white;
@@ -52,6 +48,10 @@ ul {
 
 .grabbable {
   cursor: grab;
+
+  &.sortable-chosen {
+    cursor: grabbing;
+  }
 }
 
 // BORDER

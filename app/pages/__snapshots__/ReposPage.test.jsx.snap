@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReposPage error shows error message 1`] = `
+<DocumentFragment>
+  <div
+    class="repos-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <p>
+          An error occurred
+        </p>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ReposPage with data empty array 1`] = `
+<DocumentFragment>
+  <div
+    class="repos-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <p>
+          No Repos Found for provided token
+        </p>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ReposPage with data with list of repos 1`] = `
+<DocumentFragment>
+  <div
+    class="repos-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <li>
+          <div
+            class="repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white "
+            data-testid="repo-details"
+          >
+            <div
+              class="info"
+            >
+              <div
+                class="text-large"
+              >
+                <b>
+                  Name
+                </b>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/full/name"
+                  target="_blank"
+                >
+                  full/name 
+                  <i
+                    class="material-icons "
+                  >
+                    open_in_new
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="star-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                star
+              </i>
+              1
+            </div>
+            <div
+              class="issue-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                error_outline
+              </i>
+              3
+            </div>
+            <p
+              class="mt-4 description"
+            >
+              Lorem Ipsum Dolor Sit Amet
+            </p>
+          </div>
+        </li>
+        <li>
+          <div
+            class="repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white "
+            data-testid="repo-details"
+          >
+            <div
+              class="info"
+            >
+              <div
+                class="text-large"
+              >
+                <b>
+                  Name
+                </b>
+                <i
+                  class="material-icons "
+                >
+                  lock
+                </i>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/full/name"
+                  target="_blank"
+                >
+                  full/name 
+                  <i
+                    class="material-icons "
+                  >
+                    open_in_new
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="star-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                star
+              </i>
+              1
+            </div>
+            <div
+              class="issue-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                error_outline
+              </i>
+              3
+            </div>
+            <p
+              class="mt-4 description"
+            >
+              Lorem Ipsum Dolor Sit Amet
+            </p>
+          </div>
+        </li>
+        <li>
+          <div
+            class="repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white "
+            data-testid="repo-details"
+          >
+            <div
+              class="info"
+            >
+              <div
+                class="text-large"
+              >
+                <b>
+                  Name
+                </b>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/full/name"
+                  target="_blank"
+                >
+                  full/name 
+                  <i
+                    class="material-icons "
+                  >
+                    open_in_new
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="star-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                star
+              </i>
+              1
+            </div>
+            <div
+              class="issue-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                error_outline
+              </i>
+              3
+            </div>
+            <p
+              class="mt-4 description"
+            >
+              Lorem Ipsum Dolor Sit Amet
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

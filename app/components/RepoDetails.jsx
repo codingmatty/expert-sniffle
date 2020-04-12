@@ -12,7 +12,6 @@ export default function RepoDetails({ repo, selected }) {
     full_name,
     description,
     stargazers_count,
-    has_issues,
     open_issues_count,
     html_url,
   } = repo;
@@ -23,6 +22,7 @@ export default function RepoDetails({ repo, selected }) {
       className={`repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white ${
         selected ? 'selected' : ''
       }`}
+      data-testid="repo-details"
     >
       <div className="info">
         <div className="text-large">

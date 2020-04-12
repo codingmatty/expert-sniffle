@@ -42,7 +42,7 @@ export default function IssuesList({ className, selectedRepoId }) {
       {loading ? (
         <p>Loading...</p>
       ) : issues.length === 0 ? (
-        <p>
+        <p data-testid="empty-issues-message">
           No issues found for {repo ? repo.full_name : selectedRepoId}.
           <br />
           <br />
@@ -51,9 +51,9 @@ export default function IssuesList({ className, selectedRepoId }) {
       ) : (
         <>
           <h3>{repo.full_name}</h3>
-          <ReactSortable tag="ul" className="grabbable" list={issues} setList={reorderIssues}>
+          <ReactSortable tag="ul" list={issues} setList={reorderIssues}>
             {issues.map((issue) => (
-              <li key={issue.id}>
+              <li key={issue.id} className="grabbable">
                 <IssueDetails {...issue} />
               </li>
             ))}

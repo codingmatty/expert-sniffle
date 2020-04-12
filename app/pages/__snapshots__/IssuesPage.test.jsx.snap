@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssuesPage loading shows loading message 1`] = `
+<DocumentFragment>
+  <div
+    class="issues-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <p>
+          No Repos Found for provided token
+        </p>
+      </ul>
+    </div>
+    <div
+      class="issues-list grow-1"
+    >
+      <a
+        class="back-to-repos mt-4 flex items-center"
+        href="/repos"
+      >
+        <i
+          class="material-icons mr-2 decoration-none"
+        >
+          arrow_back
+        </i>
+        Back To Repos
+      </a>
+      <div
+        class="flex direction-row space-between items-center"
+      >
+        <h2>
+          Issues
+        </h2>
+        <button>
+          Reload Issues
+        </button>
+      </div>
+      <p>
+        Loading...
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IssuesPage with data empty array 1`] = `
+<DocumentFragment>
+  <div
+    class="issues-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <p>
+          No Repos Found for provided token
+        </p>
+      </ul>
+    </div>
+    <div
+      class="issues-list grow-1"
+    >
+      <a
+        class="back-to-repos mt-4 flex items-center"
+        href="/repos"
+      >
+        <i
+          class="material-icons mr-2 decoration-none"
+        >
+          arrow_back
+        </i>
+        Back To Repos
+      </a>
+      <div
+        class="flex direction-row space-between items-center"
+      >
+        <h2>
+          Issues
+        </h2>
+        <button>
+          Reload Issues
+        </button>
+      </div>
+      <p
+        data-testid="empty-issues-message"
+      >
+        No issues found for 123456789.
+        <br />
+        <br />
+        Try selecting a different repo.
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IssuesPage with data with list of repos 1`] = `
+<DocumentFragment>
+  <div
+    class="issues-page flex direction-row mx-4 medium:mx-auto"
+  >
+    <div
+      class="repos-list grow-1"
+    >
+      <div
+        class="flex direction-row space-between items-center mb-2"
+      >
+        <div
+          class="flex direction-column"
+        >
+          <h2
+            class="mb-2"
+          >
+            Repos
+          </h2>
+          <a
+            aria-current="page"
+            href="/"
+          >
+            Update Token
+          </a>
+        </div>
+        <button>
+          Reload Repos
+        </button>
+      </div>
+      <ul>
+        <li>
+          <div
+            class="repo-details pointer space-between mt-4 border border-gray radius-3 p-4 bg-white selected"
+            data-testid="repo-details"
+          >
+            <div
+              class="info"
+            >
+              <div
+                class="text-large"
+              >
+                <b>
+                  Name
+                </b>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/full/name"
+                  target="_blank"
+                >
+                  full/name 
+                  <i
+                    class="material-icons "
+                  >
+                    open_in_new
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="star-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                star
+              </i>
+              1
+            </div>
+            <div
+              class="issue-count flex items-center text-large"
+            >
+              <i
+                class="material-icons mr-2"
+              >
+                error_outline
+              </i>
+              3
+            </div>
+            <p
+              class="mt-4 description"
+            >
+              Lorem Ipsum Dolor Sit Amet
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="issues-list grow-1"
+    >
+      <a
+        class="back-to-repos mt-4 flex items-center"
+        href="/repos"
+      >
+        <i
+          class="material-icons mr-2 decoration-none"
+        >
+          arrow_back
+        </i>
+        Back To Repos
+      </a>
+      <div
+        class="flex direction-row space-between items-center"
+      >
+        <h2>
+          Issues
+        </h2>
+        <button>
+          Reload Issues
+        </button>
+      </div>
+      <h3>
+        full/name
+      </h3>
+      <ul
+        class="grabbable"
+      >
+        <li
+          class=""
+          data-id="1"
+        >
+          <div
+            class="issue-details mt-4 border border-gray radius-3 p-4 bg-white new"
+            data-testid="issue-details"
+          >
+            <div
+              class="flex space-between"
+            >
+              <img
+                class="radius-3"
+                height="40"
+                src="test.com&s=40"
+                width="40"
+              />
+              <div
+                class="text-small"
+              >
+                <div>
+                  Created: 4/11/2020
+                </div>
+                <div>
+                  Last updated a few seconds ago
+                </div>
+              </div>
+            </div>
+            <p
+              class="mt-4"
+            >
+              Issue #1
+            </p>
+          </div>
+        </li>
+        <li
+          class=""
+          data-id="2"
+        >
+          <div
+            class="issue-details mt-4 border border-gray radius-3 p-4 bg-white "
+            data-testid="issue-details"
+          >
+            <div
+              class="flex space-between"
+            >
+              <img
+                class="radius-3"
+                height="40"
+                src="test.com&s=40"
+                width="40"
+              />
+              <div
+                class="text-small"
+              >
+                <div>
+                  Created: 4/11/2020
+                </div>
+                <div>
+                  Last updated a few seconds ago
+                </div>
+              </div>
+            </div>
+            <p
+              class="mt-4"
+            >
+              Issue #2
+            </p>
+          </div>
+        </li>
+        <li
+          class=""
+          data-id="3"
+        >
+          <div
+            class="issue-details mt-4 border border-gray radius-3 p-4 bg-white "
+            data-testid="issue-details"
+          >
+            <div
+              class="flex space-between"
+            >
+              <img
+                class="radius-3"
+                height="40"
+                src="test.com&s=40"
+                width="40"
+              />
+              <div
+                class="text-small"
+              >
+                <div>
+                  Created: 4/11/2020
+                </div>
+                <div>
+                  Last updated a few seconds ago
+                </div>
+              </div>
+            </div>
+            <p
+              class="mt-4"
+            >
+              Issue #3
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
