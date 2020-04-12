@@ -32,14 +32,18 @@ export default function TokenInputPage() {
             Github Tokens <Icon name="open_in_new" />
           </a>
           , and generate a new one, providing a description like "Issue
-          Prioritization Project" to describe its use.
+          Prioritization Project" to describe its use and selecting the{' '}
+          <code className="inline">repo</code> scope.
         </p>
         <p className="my-4">
           Once you enter it here, you will then be able to select a Github repo
           to show a list of Issues and prioritize them as needed.
         </p>
       </div>
-      <form onSubmit={onSubmit} className="token-form mx-auto flex direction-column">
+      <form
+        onSubmit={onSubmit}
+        className="token-form mx-auto flex direction-column"
+      >
         <label html="token-input" className="bold">
           Access Token:
         </label>

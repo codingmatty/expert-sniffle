@@ -257,11 +257,9 @@ exports[`IssuesPage with data with list of repos 1`] = `
       <h3>
         full/name
       </h3>
-      <ul
-        class="grabbable"
-      >
+      <ul>
         <li
-          class=""
+          class="grabbable"
           data-id="1"
         >
           <div
@@ -281,7 +279,7 @@ exports[`IssuesPage with data with list of repos 1`] = `
                 class="text-small"
               >
                 <div>
-                  Created: 4/11/2020
+                  Created: 12/31/2019
                 </div>
                 <div>
                   Last updated a few seconds ago
@@ -296,7 +294,7 @@ exports[`IssuesPage with data with list of repos 1`] = `
           </div>
         </li>
         <li
-          class=""
+          class="grabbable"
           data-id="2"
         >
           <div
@@ -316,7 +314,7 @@ exports[`IssuesPage with data with list of repos 1`] = `
                 class="text-small"
               >
                 <div>
-                  Created: 4/11/2020
+                  Created: 12/31/2019
                 </div>
                 <div>
                   Last updated a few seconds ago
@@ -331,7 +329,7 @@ exports[`IssuesPage with data with list of repos 1`] = `
           </div>
         </li>
         <li
-          class=""
+          class="grabbable"
           data-id="3"
         >
           <div
@@ -351,7 +349,7 @@ exports[`IssuesPage with data with list of repos 1`] = `
                 class="text-small"
               >
                 <div>
-                  Created: 4/11/2020
+                  Created: 12/31/2019
                 </div>
                 <div>
                   Last updated a few seconds ago

@@ -31,7 +31,13 @@ exports[`TokenInputPage sets redux state 1`] = `
             open_in_new
           </i>
         </a>
-        , and generate a new one, providing a description like "Issue Prioritization Project" to describe its use.
+        , and generate a new one, providing a description like "Issue Prioritization Project" to describe its use and selecting the 
+        <code
+          class="inline"
+        >
+          repo
+        </code>
+         scope.
       </p>
       <p
         class="my-4"
